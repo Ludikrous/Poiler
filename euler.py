@@ -1,29 +1,13 @@
 import math
 
-print("LOOK TO YOUR LEFT AND ENTER THE DIFF. EQ.")
-print("LOOK FOR THE # AND CAPS AT LINE 15")
-print()
-
-xi = float(input("initial x: "))               #initial x
-yi = float(input("initial y: "))               #initial y
-step = float(input("how big is your step: "))  #delta x
-n = float(input("how many steps: "))           #subdivisions
+dydx = input("Differential equation:")
+xi = float(input("Initial x: "))               #initial x
+yi = float(input("Initial y: "))               #initial y
+step = float(input("Step size: "))  #delta x
+n = float(input("Steps: "))           #subdivisions
 
 def yprime(x, y):       #function for finding derivative
-
-    #ENTER YOUR DIFF EQ HERE, LOOK UP PYTHON SYNTAX FOR MATH
-    
-    dy_dx = x+(y)    # <--- LOOK HERE
-    
-    #multiplication *
-    #division /
-    #addition +
-    #subtraction -
-    # y^2  would be  y**2
-    # x^3  would be  x**3 and so on
-    # sqrt(x) would be math.sqrt(x)
-    
-    return (dy_dx)
+    return(eval(dydx))
 
 def euler(xi, yi, step):    #eulers logic
     xi = float(xi)
