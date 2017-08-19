@@ -1,12 +1,12 @@
 import math
 
 dydx = input("Differential equation:")
-xi = float(input("Initial x: "))               #initial x
-yi = float(input("Initial y: "))               #initial y
-step = float(input("Step size: "))  #delta x
-n = float(input("Steps: "))           #subdivisions
+xi = float(input("Initial x: "))         #initial x
+yi = float(input("Initial y: "))         #initial y
+step = float(input("Step size: "))       #delta x
+n = float(input("Steps: "))              #subdivisions
 
-def yprime(x, y):       #function for finding derivative
+def yprime(x, y):           #function for finding derivative
     return(eval(dydx))
 
 def euler(xi, yi, step):    #eulers logic
